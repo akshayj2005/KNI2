@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KNI Global Tours - Japan & India Travel Specialists</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        background: '#FFF9F5',
+                        surface: '#FFFFFF',
+                        text: '#2D3436',
+                        primary: '#E17055',
+                        secondary: '#00B894',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="h-full font-body bg-background text-text overflow-auto">
+    <div id="app" class="w-full min-h-full">
+        <!-- Header Placeholder -->
+        <div id="header-placeholder"></div>
+
+        <main id="main-content" class="pt-16 md:pt-20">
+            <!-- Hero Section -->
+            <section class="relative overflow-hidden py-12 md:py-20 lg:py-28">
+                <div class="hero-shape w-64 h-64 bg-primary top-10 -left-32 absolute"></div>
+                <div class="hero-shape w-96 h-96 bg-secondary -bottom-20 -right-48 absolute"></div>
+                <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <div class="text-center lg:text-left animate-fade-in-up">
+                            <span
+                                class="inline-block px-4 py-1.5 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-6">
+                                🌸 Welcome to KNI Global Tours </span>
+                            <h1 id="hero-title"
+                                class="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-text leading-tight mb-6">
+                                Discover the Magic of <span class="text-gradient">Japan</span> & <span
+                                    class="text-gradient">India</span></h1>
+                            <p id="hero-subtitle"
+                                class="text-lg md:text-xl text-gray-600 mb-8 max-w-xl mx-auto lg:mx-0">Embark on
+                                unforgettable journeys to Asia's most enchanting destinations. From ancient temples to
+                                modern marvels, we craft experiences that touch your soul.</p>
+                            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                                <button onclick="navigateTo('packages')"
+                                    class="btn-primary px-8 py-4 rounded-full font-semibold text-lg inline-flex items-center justify-center gap-2">
+                                    Explore Packages
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                    </svg>
+                                </button>
+                                <button onclick="navigateTo('contact')"
+                                    class="bg-surface text-text px-8 py-4 rounded-full font-semibold text-lg border-2 border-gray-200 hover:border-primary hover:text-primary transition-all inline-flex items-center justify-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                    </svg>
+                                    Free Consultation
+                                </button>
+                            </div>
+                            <!-- Trust badges -->
+                            <div class="mt-10 flex flex-wrap items-center justify-center lg:justify-start gap-6">
+                                <div class="flex items-center gap-2">
+                                    <div class="flex -space-x-2">
+                                        <div
+                                            class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-xs">
+                                            👤</div>
+                                        <div
+                                            class="w-8 h-8 rounded-full bg-secondary/20 flex items-center justify-center text-xs">
+                                            👤</div>
+                                        <div
+                                            class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-xs">
+                                            👤</div>
+                                    </div>
+                                    <span class="text-sm text-gray-600"><strong>10,000+</strong> Happy Travelers</span>
+                                </div>
+                                <div class="flex items-center gap-1"><span class="text-yellow-400">★★★★★</span> <span
+                                        class="text-sm text-gray-600">4.9/5 Rating</span></div>
+                            </div>
+                        </div>
+                        <!-- Hero Images -->
+                        <div class="relative animate-fade-in-up delay-200">
+                            <div class="relative">
+                                <!-- Japan Image Card -->
+                                <div
+                                    class="absolute -top-4 -left-4 md:-top-8 md:-left-8 w-48 md:w-64 bg-surface rounded-2xl shadow-xl p-3 animate-float z-10">
+                                    <div
+                                        class="aspect-[4/3] rounded-xl bg-gradient-to-br from-pink-200 to-pink-100 flex items-center justify-center overflow-hidden">
+                                        <div class="text-center p-4"><span class="text-5xl md:text-6xl">🌸</span>
+                                            <p class="font-display font-semibold text-gray-700 mt-2">Japan</p>
+                                        </div>
+                                    </div>
+                                    <div class="mt-2 flex items-center justify-between"><span
+                                            class="text-xs text-gray-500">Cherry Blossom</span> <span
+                                            class="text-primary text-sm font-bold">From $1,299</span></div>
+                                </div>
+                                <!-- Main Image -->
+                                <div class="ml-8 md:ml-16 bg-surface rounded-3xl shadow-2xl p-4 md:p-6">
+                                    <div
+                                        class="aspect-square rounded-2xl bg-gradient-to-br from-orange-100 via-amber-50 to-green-100 flex items-center justify-center">
+                                        <div class="text-center">
+                                            <div class="text-7xl md:text-8xl mb-4">🏯</div>
+                                            <p class="font-display text-2xl font-bold text-gray-700">Explore Asia</p>
+                                            <p class="text-gray-500">2 Magical Destinations</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- India Image Card -->
+                                <div class="absolute -bottom-4 -right-4 md:-bottom-8 md:-right-8 w-48 md:w-64 bg-surface rounded-2xl shadow-xl p-3 animate-float z-10"
+                                    style="animation-delay: 2s;">
+                                    <div
+                                        class="aspect-[4/3] rounded-xl bg-gradient-to-br from-orange-200 to-amber-100 flex items-center justify-center overflow-hidden">
+                                        <div class="text-center p-4"><span class="text-5xl md:text-6xl">🕌</span>
+                                            <p class="font-display font-semibold text-gray-700 mt-2">India</p>
+                                        </div>
+                                    </div>
+                                    <div class="mt-2 flex items-center justify-between"><span
+                                            class="text-xs text-gray-500">Golden Triangle</span> <span
+                                            class="text-secondary text-sm font-bold">From $899</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Search Section -->
+            <section class="py-8 md:py-12 -mt-6 relative z-20">
+                <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div
+                        class="bg-surface/80 rounded-2xl shadow-xl p-6 md:p-8 glass backdrop-blur-xl border border-white/20">
+                        <h3 class="font-display text-xl font-semibold text-center mb-6">Find Your Perfect Trip</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+                            <div><label class="block text-sm font-medium text-gray-600 mb-2">Destination</label> <select
+                                    id="search-destination"
+                                    class="w-full px-4 py-3 rounded-xl border border-gray-200 outline-none bg-gray-50">
+                                    <option value="">All Destinations</option>
+                                    <option value="japan">Japan</option>
+                                    <option value="india">India</option>
+                                </select></div>
+                            <div><label class="block text-sm font-medium text-gray-600 mb-2">Theme</label> <select
+                                    id="search-theme"
+                                    class="w-full px-4 py-3 rounded-xl border border-gray-200 outline-none bg-gray-50">
+                                    <option value="">All Themes</option>
+                                    <option value="honeymoon">Honeymoon</option>
+                                    <option value="family">Family</option>
+                                    <option value="solo">Solo</option>
+                                    <option value="group">Group</option>
+                                    <option value="adventure">Adventure</option>
+                                </select></div>
+                            <div><label class="block text-sm font-medium text-gray-600 mb-2">Month</label> <select
+                                    id="search-month"
+                                    class="w-full px-4 py-3 rounded-xl border border-gray-200 outline-none bg-gray-50">
+                                    <option value="">Any Month</option>
+                                    <option value="jan">January</option>
+                                    <option value="feb">February</option>
+                                    <option value="mar">March</option>
+                                    <option value="apr">April</option>
+                                    <option value="may">May</option>
+                                    <option value="jun">June</option>
+                                    <option value="jul">July</option>
+                                    <option value="aug">August</option>
+                                    <option value="sep">September</option>
+                                    <option value="oct">October</option>
+                                    <option value="nov">November</option>
+                                    <option value="dec">December</option>
+                                </select></div>
+                            <div><label class="block text-sm font-medium text-gray-600 mb-2">Budget</label> <select
+                                    id="search-budget"
+                                    class="w-full px-4 py-3 rounded-xl border border-gray-200 outline-none bg-gray-50">
+                                    <option value="">Any Budget</option>
+                                    <option value="budget">Under $1,000</option>
+                                    <option value="mid">$1,000 - $2,500</option>
+                                    <option value="premium">$2,500 - $5,000</option>
+                                    <option value="luxury">$5,000+</option>
+                                </select></div>
+                            <div class="flex items-end"><button onclick="performSearch()"
+                                    class="w-full btn-primary px-6 py-3 rounded-xl font-semibold inline-flex items-center justify-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                    </svg> Search </button></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seasonal Packages Section -->
+            <section class="py-16 md:py-24 bg-surface">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-12">
+                        <span
+                            class="inline-block px-4 py-1.5 bg-secondary/10 text-secondary rounded-full text-sm font-semibold mb-4">
+                            🌿 Seasonal Specials </span>
+                        <h2 class="font-display text-3xl md:text-4xl font-bold text-text mb-4">Perfect Season, Perfect
+                            Trip</h2>
+                        <p class="text-gray-600 max-w-2xl mx-auto">Discover the best destinations based on the current
+                            season. We've curated these packages for optimal weather and experiences.</p>
+                    </div>
+                    <div id="seasonal-packages" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+                </div>
+            </section>
+
+            <!-- Destinations Section -->
+            <section class="py-16 md:py-24">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-12">
+                        <span
+                            class="inline-block px-4 py-1.5 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-4">
+                            ✈️ Our Destinations </span>
+                        <h2 class="font-display text-3xl md:text-4xl font-bold text-text mb-4">Explore Japan & India
+                        </h2>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <!-- Japan Card -->
+                        <div class="group relative bg-surface rounded-3xl shadow-lg overflow-hidden card-hover">
+                            <div
+                                class="aspect-[16/10] bg-gradient-to-br from-pink-300 via-pink-200 to-white relative overflow-hidden">
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <div
+                                        class="text-center transform group-hover:scale-110 transition-transform duration-500">
+                                        <span class="text-8xl md:text-9xl">🗾</span>
+                                    </div>
+                                </div>
+                                <div class="absolute top-4 right-4"><span
+                                        class="bg-surface/90 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold text-primary">15+
+                                        Packages</span></div>
+                            </div>
+                            <div class="p-6 md:p-8">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div>
+                                        <h3 class="font-display text-2xl md:text-3xl font-bold text-text">Japan</h3>
+                                        <p class="text-gray-500">Land of the Rising Sun</p>
+                                    </div>
+                                    <div class="text-right"><span class="text-gray-400 text-sm">Starting from</span>
+                                        <p class="text-primary text-2xl font-bold">$1,299</p>
+                                    </div>
+                                </div>
+                                <p class="text-gray-600 mb-6">From the neon lights of Tokyo to the serene temples of
+                                    Kyoto, experience the perfect blend of ancient traditions and cutting-edge
+                                    technology.</p>
+                                <button onclick="viewDestination('japan')"
+                                    class="w-full btn-primary py-3 rounded-xl font-semibold"> Explore Japan Packages
+                                </button>
+                            </div>
+                        </div>
+                        <!-- India Card -->
+                        <div class="group relative bg-surface rounded-3xl shadow-lg overflow-hidden card-hover">
+                            <div
+                                class="aspect-[16/10] bg-gradient-to-br from-orange-300 via-amber-200 to-white relative overflow-hidden">
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <div
+                                        class="text-center transform group-hover:scale-110 transition-transform duration-500">
+                                        <span class="text-8xl md:text-9xl">🇮🇳</span>
+                                    </div>
+                                </div>
+                                <div class="absolute top-4 right-4"><span
+                                        class="bg-surface/90 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold text-secondary">20+
+                                        Packages</span></div>
+                            </div>
+                            <div class="p-6 md:p-8">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div>
+                                        <h3 class="font-display text-2xl md:text-3xl font-bold text-text">India</h3>
+                                        <p class="text-gray-500">Incredible Diversity</p>
+                                    </div>
+                                    <div class="text-right"><span class="text-gray-400 text-sm">Starting from</span>
+                                        <p class="text-secondary text-2xl font-bold">$899</p>
+                                    </div>
+                                </div>
+                                <p class="text-gray-600 mb-6">Discover the Taj Mahal's grandeur, Rajasthan's royal
+                                    heritage, Kerala's backwaters, and the spiritual essence of Varanasi.</p>
+                                <button onclick="viewDestination('india')"
+                                    class="w-full btn-secondary py-3 rounded-xl font-semibold"> Explore India Packages
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer Placeholder -->
+        <div id="footer-placeholder"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/config.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/components.js"></script>
+</body>
+
+</html>
